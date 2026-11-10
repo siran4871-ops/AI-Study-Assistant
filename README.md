@@ -1,31 +1,55 @@
 
-# AI Study Assistant 🤖
+print("================================")
+print("       AI STUDY ASSISTANT")
+print("          VERSION 2.0")
+print("================================")
 
-Welcome to AI Study Assistant!
+name = input("Enter your name: ")
 
-An educational project designed to help students learn easily with simple explanations and study support.
+print("\nWelcome", name, "!")
 
-## Features
-- 📚 Study Tips
-- 🐍 Python Basics
-- 💡 Motivation
-- 🌐 Tamil Support
-- 🗣️ Thanglish Support
-- ✍️ Simple English
+while True:
+    print("\n===== MAIN MENU =====")
+    print("1. Study Tips")
+    print("2. Python Basics")
+    print("3. Python Quiz")
+    print("4. Motivation")
+    print("5. Exit")
 
-## Technology Used
-- Python
+    choice = input("\nEnter your choice: ")
 
-## Project Goal
-To make learning easier, smarter and more accessible for students.
+    if choice == "1":
+        print("\nStudy Tip:")
+        print("Study for 25 minutes.")
+        print("Take a 5-minute break.")
 
-## Developer
-Created as a beginner AI & Data Science project.
+    elif choice == "2":
+        print("\nPython Basics")
+        print("Python is a programming language.")
+        print("Example: print('Hello World')")
 
-## Future Updates
-- AI-powered question answering
-- Notes summarization
-- Quiz generation
-- Tamil and English explanations
+    elif choice == "3":
+        print("\nPython Quiz")
+        print("Question: Which keyword is used to create a function?")
+        print("A. loop")
+        print("B. def")
+        print("C. print")
 
-**Keep Learning. Keep Growing! 🚀**
+        answer = input("Your answer: ").lower()
+
+        if answer == "b":
+            print("Correct! Excellent!")
+        else:
+            print("Incorrect. Correct answer is B (def).")
+
+    elif choice == "4":
+        print("\nKeep learning!")
+        print("Small steps create big achievements.")
+
+    elif choice == "5":
+        print("Thank you for using AI Study Assistant!")
+        break
+
+    else:
+        print("Invalid choice. Try again.")
+        
